@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="#384356"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/realNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Real Name"
+        android:textColor="#384356"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        app:layout_constraintStart_toStartOf="@id/nameTextView" />
+
+    <TextView
+        android:id="@+id/teamTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team"
+        android:textColor="#384356"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@id/realNameTextView"
+        app:layout_constraintStart_toStartOf="@id/nameTextView" />
+
+    <TextView
+        android:id="@+id/firstAppearanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="firstappearance"
+        android:textColor="#384356"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@id/teamTextView"
+        app:layout_constraintStart_toStartOf="@id/nameTextView" />
+
+    <TextView
+        android:id="@+id/createdByTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="created by"
+        android:textColor="#384356"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@id/firstAppearanceTextView"
+        app:layout_constraintStart_toStartOf="@id/nameTextView" />
+
+    <TextView
+        android:id="@+id/publisherTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="publisher"
+        android:textColor="#384356"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@id/createdByTextView"
+        app:layout_constraintStart_toStartOf="@id/nameTextView" />
+
+
+   <ImageView
+       android:layout_width="@dimen/_100sdp"
+       android:layout_height="@dimen/_100sdp"
+       android:id="@+id/heroImageView"
+       app:layout_constraintTop_toBottomOf="@id/publisherTextView"
+       app:layout_constraintStart_toStartOf="@id/publisherTextView"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:scaleType="fitXY"/>
+
+
+    <TextView
+        android:id="@+id/bioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        android:textColor="#384356"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@id/heroImageView"
+        app:layout_constraintStart_toStartOf="@id/nameTextView" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@id/bioTextView"
+        android:background="#384356"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
